@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>天德福</title>
+<link href="responsive/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<!-- 
+要详细了解文件顶部 html 标签周围的条件注释:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+如果您使用的是 modernizr (http://www.modernizr.com/) 的自定义内部版本，请执行以下操作:
+* 在此处将链接插入 js 
+* 将下方链接移至 html5shiv
+* 将“no-js”类添加到顶部的 html 标签
+* 如果 modernizr 内部版本中包含 MQ Polyfill，您也可以将链接移至 respond.min.js 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="responsive/respond.min.js"></script>
+<!-- jQuery library (served from Google) -->
+<script src="scripts/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="scripts/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="styles/jquery.bxslider.css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+  	<div id="header">
+        <span id="logo"><a href="#" ><img src="images/tdf.png" /></a></span>
+        <span id="login"><a href="#">企业员工登录</a></span>
+    </div>
+    <div id="slide">
+        <ul class="bxslider">
+            <li><img src="images/pic1.jpg" /></li>
+            <li><img src="images/pic2.jpg" /></li>
+            <li><img src="images/pic3.jpg" /></li>
+            <li><img src="images/pic4.jpg" /></li>
+        </ul>
+    </div>
+    <div id="links">
+    	<span id="link1"><a href="http://www.tdf001.com" >天德福官网</a></span>
+        <span id="link2"><a href="http://tiandefu.tmall.com" >天猫官方旗舰店</a></span>
+        <span id="link3"><a href="http://ec.vcooline.com/mobile/shops/21441?wx_mp_user_id=gh_6d6690cbb33a" >微信官方旗舰店</a></span>
+        <span id="link4"><a href="http://www.tdf001.com/contact.html" >分店查询</a></span>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+            auto: true
+        });
+	});
+</script>
+
+</body>
+</html>
